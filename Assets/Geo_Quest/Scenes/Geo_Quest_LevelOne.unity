@@ -290,7 +290,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Press Arrow or \nA and D Keys to move left and right"
+  m_text: "Press Arrow or \nA and D Keys to move left and right\nPress 1,2, and 3
+    keys to change color"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6d45388d08f013f47a00ce35b889bb5e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 6d45388d08f013f47a00ce35b889bb5e, type: 2}
