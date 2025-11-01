@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        sr = transform.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,5 +25,14 @@ public class PlayerMovement : MonoBehaviour
         float xInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
         Debug.Log(xInput);
+
+        if (xInput > 0)
+        {
+            sr.flipX = true;
+        }
+        else if (xInput < 0)
+        {
+            sr.flipX = false;
+        }
     }
 }
